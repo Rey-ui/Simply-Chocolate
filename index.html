@@ -1,14 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./image/Vector.svg" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,700italic&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/adaptive.css" />
+    <style>
+      .swiper {
+        width: 100%;
+        /* height: 100%; */
+        /* height: 200px; */
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-wrapper {
+        display: flex;
+        margin: 0 auto;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination {
+        position: static;
+      }
+      .swiper-pagination span {
+        height: 13px;
+        width: 13px;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #fd9222;
+        width: 28px !important;
+
+        border-radius: 15px;
+      }
+      .swiper-pagination span {
+      }
+    </style>
     <title>Simply-Chocolate</title>
   </head>
 
@@ -178,8 +229,244 @@
           </ul>
         </div>
       </section>
+      <section class="sensations section">
+        <div class="container">
+          <div class="sensations__title-container">
+            <h2 class="sensations__title title">
+              IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
+            </h2>
+            <p class="sensations__text">
+              At Simply Chocolate, we believe that the secret to exceptional
+              chocolate is in the details. From the sourcing of the finest
+              ingredients to the careful crafting of each individual piece,
+              every step of our process adds up to one exceptional taste
+              sensation.
+            </p>
+          </div>
+          <ul class="sensations__list">
+            <li class="sensations__item orange">
+              <img
+                srcset="
+                  ./image/taste-sensation/kisspng-milk-white-chocolate.png    1x,
+                  ./image/taste-sensation/kisspng-milk-white-chocolate@2x.png 2x
+                "
+                src="./image/taste-sensation/kisspng-milk-white-chocolate.png"
+                alt="milk-white-chocolate"
+              />
+              <h3 class="sensations__item-title">milk chocolate</h3>
+              <div class="item-overwiev">
+                <div class="item-overwiev__header">
+                  <h3 class="item-overwiev__title">milk chocolate</h3>
+                  <div class="item-overwiev__btns">
+                    <button class="item-overwiev__btn left">chocolate</button>
+                    <button class="item-overwiev__btn right">
+                      the benefits
+                    </button>
+                  </div>
+                </div>
+                <p class="item-overwiev__info">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
+            </li>
+            <li class="sensations__item">
+              <img
+                srcset="
+                  ./image/taste-sensation/kisspng-milk.png    1x,
+                  ./image/taste-sensation/kisspng-milk@2x.png 2x
+                "
+                src="./image/taste-sensation/kisspng-milk.png"
+                alt="milk"
+              />
+              <h3 class="sensations__item-title">milk</h3>
+              <div class="item-overwiev">
+                <div class="item-overwiev__header">
+                  <h3 class="item-overwiev__title">milk</h3>
+                  <div class="item-overwiev__btns">
+                    <button class="item-overwiev__btn left">milk</button>
+                    <button class="item-overwiev__btn right">
+                      the benefits
+                    </button>
+                  </div>
+                </div>
+                <p class="item-overwiev__info">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
+            </li>
+            <li class="sensations__item black">
+              <img
+                srcset="
+                  ./image/taste-sensation/kisspng-nuts.png    1x,
+                  ./image/taste-sensation/kisspng-nuts@2x.png 2x
+                "
+                src="./image/taste-sensation/kisspng-nuts.png"
+                alt="nuts"
+              />
+              <h3 class="sensations__item-title">nuts</h3>
+              <div class="item-overwiev">
+                <div class="item-overwiev__header">
+                  <h3 class="item-overwiev__title">nuts</h3>
+                  <div class="item-overwiev__btns">
+                    <button class="item-overwiev__btn left">nuts</button>
+                    <button class="item-overwiev__btn right">
+                      the benefits
+                    </button>
+                  </div>
+                </div>
+                <p class="item-overwiev__info">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
+                </p>
+              </div>
+            </li>
+            <li class="sensations__item">
+              <img
+                srcset="
+                  ./image/taste-sensation/kisspng-black-chocolate.png    1x,
+                  ./image/taste-sensation/kisspng-black-chocolate@2x.png 2x
+                "
+                src="./image/taste-sensation/kisspng-black-chocolate.png"
+                alt="black-chocolatep"
+              />
+              <h3 class="sensations__item-title">semi - sweet chocolate</h3>
+              <div class="item-overwiev">
+                <div class="item-overwiev__header">
+                  <h3 class="item-overwiev__title">sweet chocolate</h3>
+                  <div class="item-overwiev__btns">
+                    <button class="item-overwiev__btn left">
+                      sweet chocolate
+                    </button>
+                    <button class="item-overwiev__btn right">
+                      the benefits
+                    </button>
+                  </div>
+                </div>
+                <p class="item-overwiev__info">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-made section">
+        <div class="container">
+          <h2 class="how-made__title title">hOW IT’S <span>made?</span></h2>
+          <div class="how-made__content-container">
+            <picture class="how-made__image">
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ./image/how-made/image-mob.jpg    1x,
+                  ./image/how-made/image-mob@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/how-made/image-desk.jpg    1x,
+                  ./image/how-made/image-desk@2x.jpg 2x
+                "
+              />
+              <img src="./image/how-made/image-desk.jpg" alt="how-made" />
+            </picture>
+            <div class="how-made__content">
+              <h3 class="how-made__content-title">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="how-made__content-list">
+                <li class="how-made__item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="how-made__item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="how-made__item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="how-made__item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="how-made__item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="container">
+        <div class="swiper my-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div> -->
     </main>
+
     <footer class="footer"></footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".my-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

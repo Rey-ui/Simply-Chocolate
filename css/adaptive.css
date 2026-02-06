@@ -269,3 +269,109 @@
     max-width: 326px;
   }
 }
+/*=========================================*/
+/*===================sensations===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+  }
+  .sensations__title-container {
+    margin: 0 auto;
+    max-width: 486px;
+    gap: 28px;
+    margin-bottom: 50px;
+  }
+  .sensations__title {
+    max-width: 400px;
+  }
+  .sensations__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  .sensations__item {
+    max-width: 336px;
+    width: 100%;
+  }
+  .sensations__item-title {
+    align-self: self-start;
+    font-weight: 600;
+  }
+}
+
+/*===================sensations===media===desktop============*/
+@media screen and (min-width: 1136px) {
+  .sensations__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  .sensations__item {
+    max-width: 336px;
+    width: 100%;
+  }
+  .sensations__item-title {
+    align-self: self-start;
+    font-weight: 600;
+  }
+  .item-overwiev {
+    padding: 20px;
+  }
+}
+/*=========================================*/
+/*===================how-made===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .how-made__title {
+    margin-bottom: 50px;
+  }
+
+  .how-made__content-container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+  }
+  .how-made__content {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 28px;
+  }
+  .how-made__content-title {
+    max-width: 350px;
+  }
+  .how-made__content-list {
+    max-width: 520px;
+  }
+}
+
+/*===================how-made===media===desktop============*/
+@media screen and (min-width: 1136px) {
+  .how-made__title {
+    margin-bottom: 50px;
+  }
+
+  .how-made__content-container {
+    flex-direction: row;
+    gap: 52px;
+  }
+  .how-made__content {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 28px;
+  }
+  .how-made__content-title {
+    max-width: 350px;
+  }
+  .how-made__content-list {
+    max-width: 420px;
+    gap: 24px;
+  }
+}

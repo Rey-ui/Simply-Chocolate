@@ -41,6 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 
 input,
@@ -134,7 +135,17 @@ h6 {
 .header-burger svg {
   stroke: #111111;
 }
-
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title span {
+  color: #fd9222;
+}
 /*====================modal=====================*/
 .modal {
   position: absolute;
@@ -413,4 +424,189 @@ h6 {
   font-weight: 400;
   line-height: 17px;
   letter-spacing: -2%;
+}
+
+/*===================sensations==section====================*/
+.sensations {
+}
+.section {
+}
+.container {
+}
+.sensations__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.sensations__text {
+  text-align: center;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+}
+.sensations__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sensations__item {
+  position: relative;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  padding: 28px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fd9222;
+  color: #111111;
+  overflow: hidden;
+  gap: 25px;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.sensations__item:hover .item-overwiev {
+  transform: translateY(0%);
+}
+.sensations__item img {
+  display: block;
+  margin: 0;
+}
+.sensations__item.orange {
+  background: #fd9222;
+  color: #fff;
+  border: none;
+}
+.sensations__item.black {
+  background: #1e1823;
+  color: #fff;
+  border: none;
+}
+.sensations__item-title {
+  align-self: self-start;
+  font-weight: 600;
+}
+.item-overwiev {
+  background-color: #fafafa;
+  color: #111111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 28px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transform: translateY(100%);
+  overflow: hidden;
+  transition: all 250ms;
+}
+.item-overwiev__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item-overwiev__title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: nowrap;
+}
+.item-overwiev__btns {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+}
+.item-overwiev__btn {
+  white-space: nowrap;
+  padding: 6px 16px;
+  border-radius: 35px;
+  font-size: 10px;
+  line-height: 120%;
+}
+.item-overwiev__btn.left {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+.item-overwiev__btn.right {
+  border: 1px solid #fd9222;
+  color: #111;
+}
+.item-overwiev__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  max-height: 146px;
+  text-transform: initial;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8; /* сколько строк */
+
+  overflow: hidden;
+}
+.sensations__item {
+  overflow: hidden;
+}
+/*===================how-made==section====================*/
+/* .how-made {
+}
+.section {
+}
+.container {
+} */
+.how-made__title {
+  margin-bottom: 32px;
+}
+
+.how-made__content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.how-made__image img {
+  border-radius: 15px;
+}
+.how-made__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.how-made__content-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+}
+.how-made__content-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 18px;
+  list-style-type: circle;
+  margin: 0 auto;
+}
+.how-made__item {
+  list-style: disc;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+}
+li::marker {
+  color: #4c4c4c;
+  background-color: #4c4c4c;
+  font-size: 20px;
 }
