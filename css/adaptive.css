@@ -375,3 +375,23 @@
     gap: 24px;
   }
 }
+/*=========================================*/
+/*===================products===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .swiper {
+    gap: 32px;
+  }
+  .products__title {
+    margin-bottom: 50px;
+  }
+  .swiper-slide {
+    display: inline-block;
+  }
+  .products__slide {
+    padding: 32px 20px;
+  }
+}
+
+/*===================products===media===desktop============*/
+@media screen and (min-width: 1136px) {
+}

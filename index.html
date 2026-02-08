@@ -14,52 +14,6 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/adaptive.css" />
-    <style>
-      .swiper {
-        width: 100%;
-        /* height: 100%; */
-        /* height: 200px; */
-
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #444;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-      }
-      .swiper-wrapper {
-        display: flex;
-        margin: 0 auto;
-      }
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .swiper-pagination {
-        position: static;
-      }
-      .swiper-pagination span {
-        height: 13px;
-        width: 13px;
-      }
-      .swiper-pagination-bullet-active {
-        background-color: #fd9222;
-        width: 28px !important;
-
-        border-radius: 15px;
-      }
-      .swiper-pagination span {
-      }
-    </style>
     <title>Simply-Chocolate</title>
   </head>
 
@@ -419,6 +373,168 @@
           </div>
         </div>
       </section>
+      <section class="products section">
+        <div class="container">
+          <h2 class="products__title title">Our <span>pRODUCTS</span></h2>
+          <div class="swiper my-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/orange.png    1x,
+                      ./image/products/orange@2x.png 2x
+                    "
+                    src="./image/products/orange.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">orange</h3>
+                      <span class="products__slide-text">Dark chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">45 UAH</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/apple.png    1x,
+                      ./image/products/apple@2x.png 2x
+                    "
+                    src="./image/products/apple.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">APPLE&CRANBERRY</h3>
+                      <span class="products__slide-text">Milk chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">50 UAH</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/lime.png    1x,
+                      ./image/products/lime@2x.png 2x
+                    "
+                    src="./image/products/lime.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">lime&sea salt</h3>
+                      <span class="products__slide-text">Dark chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">66 UAH</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/pineapple.png    1x,
+                      ./image/products/pineapple@2x.png 2x
+                    "
+                    src="./image/products/pineapple.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">pineapple</h3>
+                      <span class="products__slide-text">Dark chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">54 UAH</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/classic-black.png    1x,
+                      ./image/products/classic-black@2x.png 2x
+                    "
+                    src="./image/products/classic-black.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">Classic</h3>
+                      <span class="products__slide-text">Milk chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">45 UAH</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/honey.png    1x,
+                      ./image/products/honey@2x.png 2x
+                    "
+                    src="./image/products/honey.png.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">honey</h3>
+                      <span class="products__slide-text">Milk chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">50 UAH</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/fruits.png    1x,
+                      ./image/products/fruits@2x.png 2x
+                    "
+                    src="./image/products/fruits.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">Roasted fruits</h3>
+                      <span class="products__slide-text">Dark chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">66 UAH</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__slide">
+                  <img
+                    srcset="
+                      ./image/products/classic.png    1x,
+                      ./image/products/classic@2x.png 2x
+                    "
+                    src="./image/products/classic.png"
+                    alt="chocolate"
+                  />
+                  <div class="products__slide-content">
+                    <div class="products__slide-content-text">
+                      <h3 class="products__slide-title">Classic</h3>
+                      <span class="products__slide-text">White chocolate</span>
+                    </div>
+                    <button class="products__slide-btn">54 UAH</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
       <!-- <div class="container">
         <div class="swiper my-swiper">
           <div class="swiper-wrapper">
@@ -441,32 +557,6 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".my-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        },
-      });
-    </script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
