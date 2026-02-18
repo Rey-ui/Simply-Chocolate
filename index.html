@@ -111,7 +111,7 @@
           </h1>
           <div class="hero-clicks">
             <div class="hero-clicks-buttons">
-              <button class="left-button hero-buy">Buy now</button>
+              <button class="left-button hero-buy buy-button">Buy now</button>
               <button class="left-button hero-made">How it’s made</button>
             </div>
             <div class="hero-click">
@@ -535,26 +535,173 @@
           </div>
         </div>
       </section>
-      <!-- <div class="container">
-        <div class="swiper my-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div class="swiper-pagination"></div>
+      <section class="sellers section">
+        <div class="container">
+          <h2 class="sellers__title title">tOp <span>Sellers</span></h2>
+          <ul class="sellers__list">
+            <li class="sellers__item">
+              <img
+                srcset="
+                  ./image/top-sellers/img01-desk.png    1x,
+                  ./image/top-sellers/img01-desk@2x.png 2x
+                "
+                src="./image/top-sellers/img01-desk.png"
+                alt="seller"
+              />
+              <p class="sellers__item-text">
+                Crazy enough chocolate originates from a bean just like the
+                coffee bean called Cacao. Cacao has been around for thousands of
+                years and was first discovered by the Native American tribe
+                called the Mayans.
+              </p>
+            </li>
+            <li class="sellers__item sellers__item2">
+              <img
+                srcset="
+                  ./image/top-sellers/img02-desk.png    1x,
+                  ./image/top-sellers/img02-desk@2x.png 2x
+                "
+                src="./image/top-sellers/img02-desk.png"
+                alt="seller"
+              />
+            </li>
+            <li class="sellers__item">
+              <picture class="sellers__item-picture">
+                <source
+                  media="(max-width: 1136px)"
+                  srcset="
+                    ./image/top-sellers/img02-desk.png    1x,
+                    ./image/top-sellers/img02-desk@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1136px)"
+                  srcset="
+                    ./image/top-sellers/img03-desk.png    1x,
+                    ./image/top-sellers/img03-desk@2x.png 2x
+                  "
+                />
+                <img src="./src/img/hero/trio-mob.png" alt="seller" />
+              </picture>
+              <button class="sellers__item-btn buy-button">Buy now</button>
+            </li>
+          </ul>
         </div>
-      </div> -->
+      </section>
     </main>
 
     <footer class="footer"></footer>
-
+    <div class="modal-buy">
+      <div class="modal-buy__container">
+        <button class="modal-buy__close">
+          <svg width="28" height="28">
+            <use href="./image/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <div class="modal-buy__content">
+          <h2 class="modal-buy__title title">bUY <span>nOW</span></h2>
+          <ul class="modal-buy__list">
+            <li class="modal-buy__item">
+              <img
+                srcset="
+                  ./image/modal-buy-now/chocolate-chips.png    1x,
+                  ./image/modal-buy-now/chocolate-chips@2x.png 2x
+                "
+                src="./image/modal-buy-now/chocolate-chips.png"
+                alt="chocolate"
+                class="modal-buy__item-img"
+              />
+              <button class="modal-buy__item-btn">100 g</button>
+            </li>
+            <li class="modal-buy__item">
+              <img
+                srcset="
+                  ./image/modal-buy-now/white-and-black.png    1x,
+                  ./image/modal-buy-now/white-and-black@2x.png 2x
+                "
+                src="./image/modal-buy-now/white-and-black.png"
+                alt="chocolate"
+                class="modal-buy__item-img"
+              />
+              <button class="modal-buy__item-btn">200 g</button>
+            </li>
+            <li class="modal-buy__item">
+              <img
+                srcset="
+                  ./image/modal-buy-now/chocolate.png    1x,
+                  ./image/modal-buy-now/chocolate@2x.png 2x
+                "
+                src="./image/modal-buy-now/chocolate.png"
+                alt="chocolate"
+                class="modal-buy__item-img"
+              />
+              <button class="modal-buy__item-btn">300 g</button>
+            </li>
+          </ul>
+          <form class="modal-buy__form">
+            <div class="modal-buy__form-content">
+              <div class="modal-buy__form-info">
+                <label class="modal-buy__form-label"
+                  ><span>Personal information</span
+                  ><input
+                    placeholder="Name"
+                    type="text"
+                    class="modal-buy__form-input"
+                /></label>
+                <input
+                  type="text"
+                  placeholder="Surname"
+                  class="modal-buy__form-input"
+                />
+              </div>
+              <label class="modal-buy__form-label"
+                ><span>Email</span
+                ><input
+                  placeholder="Enter your email"
+                  type="email"
+                  class="modal-buy__form-input"
+              /></label>
+              <label class="modal-buy__form-label"
+                ><span>Phone number</span>
+                <div class="modal-buy__form-input-cont-number">
+                  <input
+                    placeholder="Phone number"
+                    type="tel"
+                    class="modal-buy__form-input modal-buy__form-input-n"
+                  />
+                  <div class="modal-buy__form-img-cont">
+                    <img
+                      src="./image/modal-buy-now/ukrine.png"
+                      alt="ukrine"
+                    /><span>+380</span>
+                  </div>
+                </div></label
+              >
+              <label class="modal-buy__form-label"
+                ><span>Card number</span>
+                <div class="modal-buy__form-input-cont-card">
+                  <input
+                    placeholder="Enter card"
+                    type="text"
+                    class="modal-buy__form-input modal-buy__form-input-c"
+                  /><svg width="32" height="21">
+                    <use href="./image/symbol-defs.svg#icon-Mastercard"></use>
+                  </svg>
+                </div>
+              </label>
+              <label class="modal-buy__form-label"
+                ><span>Comment</span
+                ><textarea
+                  class="modal-buy__form-textarea"
+                  placeholder="Enter text"
+                ></textarea>
+              </label>
+            </div>
+            <button type="submit" class="modal-buy__form-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>

@@ -395,3 +395,119 @@
 /*===================products===media===desktop============*/
 @media screen and (min-width: 1136px) {
 }
+/*=========================================*/
+/*===================sellers===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .sellers__title {
+    margin-bottom: 50px;
+  }
+  .sellers__list {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .sellers__item {
+    gap: 32px;
+    max-width: 344px;
+  }
+  .sellers__item-btn {
+    font-size: 18px;
+    align-self: self-end;
+    padding: 14px 40px;
+    border-radius: 100px;
+  }
+}
+
+/*===================sellers===media===desktop============*/
+@media screen and (min-width: 1136px) {
+  .sellers__item2 {
+    display: flex;
+  }
+}
+/*=========================================*/
+/*===================modal-buy===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .modal-buy__content {
+    max-height: 90vh;
+    overflow-y: auto;
+    height: 100%;
+    padding: 48px;
+  }
+  .modal-buy__close {
+    top: 24px;
+    right: 24px;
+  }
+  .modal-buy__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+  }
+  .modal-buy__item {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px 20px;
+    padding-bottom: 18px;
+  }
+  .modal-buy__item-img {
+    width: 120px;
+    height: 107px;
+  }
+  .modal-buy__item-btn {
+    padding: 8px 27px;
+  }
+
+  .modal-buy__form-info {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    gap: 21px;
+  }
+  .modal-buy__form-label {
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+  }
+  .modal-buy__form-input {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+
+    padding: 22px 24px;
+  }
+  .modal-buy__form-input-n {
+    padding-left: 177px;
+  }
+  .modal-buy__form-img-cont {
+    left: 24px;
+    top: 48px;
+    gap: 18px;
+    padding-right: 32px;
+    font-size: 18px;
+  }
+
+  .modal-buy__form-input-cont-card svg {
+    right: 24px;
+    top: 49px;
+  }
+
+  .modal-buy__form-input-c {
+    padding-right: 70px;
+  }
+  .modal-buy__form-textarea {
+    font-size: 18px;
+    padding: 22px 24px;
+    min-height: 137px;
+  }
+  .modal-buy__form-btn {
+    padding: 14px 40px;
+  }
+}
+
+/*===================modal-buy===media===desktop============*/
+@media screen and (min-width: 1136px) {
+}
