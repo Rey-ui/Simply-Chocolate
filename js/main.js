@@ -39,3 +39,24 @@ const swiper = new Swiper(".my-swiper", {
     },
   },
 });
+
+// Initialize Swiper
+const isLoveSwiper = new Swiper(".my-is-love-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 28,
+  pagination: {
+    el: ".swiper-is-love-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1136: {
+      slidesPerView: 3,
+    },
+  },
+});

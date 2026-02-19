@@ -41,19 +41,23 @@
               </a>
               <ul class="modal-list">
                 <li class="modal-item">
-                  <a href="#" class="modal-item__link">Home</a>
+                  <a href="#home" class="modal-item__link">Home</a>
                 </li>
                 <li class="modal-item">
-                  <a href="#" class="modal-item__link">How it’s made?</a>
+                  <a href="#hoe-made" class="modal-item__link"
+                    >How it’s made?</a
+                  >
                 </li>
                 <li class="modal-item">
-                  <a href="#" class="modal-item__link">Our products</a>
+                  <a href="#products" class="modal-item__link">Our products</a>
                 </li>
                 <li class="modal-item">
-                  <a href="#" class="modal-item__link">Top sellers</a>
+                  <a href="#sellers" class="modal-item__link">Top sellers</a>
                 </li>
                 <li class="modal-item">
-                  <a href="#" class="modal-item__link">Chocolate is loved</a>
+                  <a href="#is-love" class="modal-item__link"
+                    >Chocolate is loved</a
+                  >
                 </li>
               </ul>
               <div class="modal-social">
@@ -72,19 +76,21 @@
           </div>
           <ul class="header-list">
             <li class="header-item">
-              <a href="#" class="header-item__link">Home</a>
+              <a href="#home" class="header-item__link">Home</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-item__link">How it’s made?</a>
+              <a href="#how-made" class="header-item__link">How it’s made?</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-item__link">Our products</a>
+              <a href="#products" class="header-item__link">Our products</a>
             </li>
             <li class="headerl-item">
-              <a href="#" class="header-item__link">Top sellers</a>
+              <a href="#sellers" class="header-item__link">Top sellers</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-item__link">Chocolate is loved</a>
+              <a href="#is-love" class="header-item__link"
+                >Chocolate is loved</a
+              >
             </li>
           </ul>
         </nav>
@@ -112,7 +118,9 @@
           <div class="hero-clicks">
             <div class="hero-clicks-buttons">
               <button class="left-button hero-buy buy-button">Buy now</button>
-              <button class="left-button hero-made">How it’s made</button>
+              <a href="#how-made" class="left-button hero-made"
+                >How it’s made</a
+              >
             </div>
             <div class="hero-click">
               <a href="#" class="hero-link-down">
@@ -322,7 +330,7 @@
           </ul>
         </div>
       </section>
-      <section class="how-made section">
+      <section id="how-made" class="how-made section">
         <div class="container">
           <h2 class="how-made__title title">hOW IT’S <span>made?</span></h2>
           <div class="how-made__content-container">
@@ -373,7 +381,7 @@
           </div>
         </div>
       </section>
-      <section class="products section">
+      <section id="products" class="products section">
         <div class="container">
           <h2 class="products__title title">Our <span>pRODUCTS</span></h2>
           <div class="swiper my-swiper">
@@ -535,7 +543,7 @@
           </div>
         </div>
       </section>
-      <section class="sellers section">
+      <section id="sellers" class="sellers section">
         <div class="container">
           <h2 class="sellers__title title">tOp <span>Sellers</span></h2>
           <ul class="sellers__list">
@@ -586,6 +594,76 @@
               <button class="sellers__item-btn buy-button">Buy now</button>
             </li>
           </ul>
+        </div>
+      </section>
+      <section id="is-love" class="is-love section">
+        <div class="container">
+          <h2 class="is-love__title title"><span>chocolate</span> is loved</h2>
+          <div class="swiper my-is-love-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="is-love__slide">
+                  <img
+                    srcset="
+                      ./image/is-loved/victoria.png    1x,
+                      ./image/is-loved/victoria@2x.png 2x
+                    "
+                    src="./image/is-loved/victoria.png"
+                    alt="user"
+                  />
+                  <div class="is-love__slide-content">
+                    <h3 class="is-love__slide-title">Victoria Dobrzhanska</h3>
+                    <p class="is-love__slide-text">
+                      I love this chocolate bar. Perfect combination of light
+                      crispy wafer, covered in a thin layer chocolate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="is-love__slide">
+                  <img
+                    srcset="
+                      ./image/is-loved/nazar.png    1x,
+                      ./image/is-loved/nazar@2x.png 2x
+                    "
+                    src="./image/is-loved/nazar.png"
+                    alt="user"
+                  />
+                  <div class="is-love__slide-content">
+                    <h3 class="is-love__slide-title">Nazar Babenko</h3>
+                    <p class="is-love__slide-text">
+                      This chocolate confection is a delight! A delight! The
+                      wafer is light and crisp, the hazelnut cream is smooth,
+                      and the chocolate is good.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="is-love__slide">
+                  <img
+                    srcset="
+                      ./image/is-loved/olena.png    1x,
+                      ./image/is-loved/olena@2x.png 2x
+                    "
+                    src="./image/is-loved/olena.png"
+                    alt="user"
+                  />
+                  <div class="is-love__slide-content">
+                    <h3 class="is-love__slide-title">Olena Kampusch</h3>
+                    <p class="is-love__slide-text">
+                      Chocolate is a family favourite treat. Love the delicious
+                      smooth chocolate and the creaminess inside. The wafer is
+                      soft but crunchy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-is-love-pagination"></div>
+          </div>
+          <button class="is-love__btn">Leave a review</button>
         </div>
       </section>
     </main>

@@ -120,7 +120,7 @@
 /*===================hero===media===tablet============*/
 @media screen and (min-width: 768px) {
   .section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 
   .hero-section {
@@ -178,7 +178,7 @@
 /*===================hero===media===desktop============*/
 @media screen and (min-width: 1136px) {
   .section {
-    padding: 128px 0;
+    padding: 64px 0;
   }
 
   .hero-section {
@@ -509,5 +509,44 @@
 }
 
 /*===================modal-buy===media===desktop============*/
+@media screen and (min-width: 1136px) {
+}
+
+/*=========================================*/
+/*===================is-love===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .is-love__title {
+    margin-bottom: 91px;
+  }
+  .my-is-love-swiper {
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .swiper-slide {
+    overflow-y: visible;
+    height: auto;
+  }
+  .is-love__slide {
+    position: relative;
+    padding: 42px 18px;
+    padding-top: 56px;
+    box-shadow: 0 9px 27px 0 rgba(215, 228, 249, 0.25);
+    background: #fff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .is-love__btn {
+    font-size: 18px;
+
+    padding: 14px 40px;
+  }
+}
+/*===================is-love===media===desktop============*/
 @media screen and (min-width: 1136px) {
 }
