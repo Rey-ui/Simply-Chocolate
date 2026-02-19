@@ -1085,3 +1085,137 @@ li::marker {
   color: #fff;
   background-color: #fd9222;
 }
+/*=======================================*/
+/*=======================================*/
+.modal-review {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px; /* чтобы на мобилке не прилипало к краям */
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+/* активное состояние */
+.modal-review.active-review {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* сама модалка */
+.modal-review__container {
+  background: #fff;
+  border-radius: 12px;
+
+  width: 100%;
+  /* max-width: 500px; */
+
+  max-height: 80vh;
+  height: 100%;
+  overflow-y: hidden;
+
+  position: relative;
+}
+.modal-review__content {
+  max-height: 80vh;
+  overflow-y: hidden;
+  height: 100%;
+  padding: 0 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.modal-review__title {
+  text-align: start;
+}
+.modal-review__close {
+  top: 14px;
+  right: 14px;
+  position: absolute;
+  stroke: #111111;
+  background-color: inherit;
+  transition: all 250ms;
+}
+.modal-review__close:hover {
+  stroke: #fd9222;
+}
+.modal-review__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 18px;
+}
+.modal-review__form-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  gap: 18px;
+}
+.modal-review__form-input {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  width: 100%;
+}
+.modal-review__form-input-cont-number {
+  width: 100%;
+  position: relative;
+}
+.modal-review__form-input-n {
+  padding-left: 106px;
+}
+.modal-review__form-img-cont {
+  position: absolute;
+  left: 18px;
+  top: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding-right: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+.modal-review__form-textarea {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  width: 100%;
+  min-height: 91px;
+}
+.modal-review__form-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 100px;
+  align-self: start;
+  background-color: #fd9222;
+  transition: all 250ms;
+}
+.modal-review__form-btn:hover {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}

@@ -1,9 +1,12 @@
 const burgerMenu = document.querySelector(".header-burger");
 const modalEl = document.querySelector(".modal");
 const modalBuyEl = document.querySelector(".modal-buy");
+const modalReviewEl = document.querySelector(".modal-review");
 const linkEl = document.querySelector(".modal-close");
 const buyNowBtns = document.querySelectorAll(".buy-button");
+const reviewBtn = document.querySelector(".is-love__btn");
 const closeBtn = document.querySelector(".modal-buy__close");
+const closeReviewBtn = document.querySelector(".modal-review__close");
 burgerMenu.addEventListener("click", () => {
   modalEl.classList.add("active");
 });
@@ -16,8 +19,14 @@ buyNowBtns.forEach((element) => {
   });
 });
 
+reviewBtn.addEventListener("click", () => {
+  modalReviewEl.classList.add("active-review");
+});
 closeBtn.addEventListener("click", () => {
   modalBuyEl.classList.remove("active-buy");
+});
+closeReviewBtn.addEventListener("click", () => {
+  modalReviewEl.classList.remove("active-review");
 });
 // Initialize Swiper
 const swiper = new Swiper(".my-swiper", {
