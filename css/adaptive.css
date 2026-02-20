@@ -556,6 +556,9 @@
 /*=========================================*/
 /*===================modal-review===media===tablet============*/
 @media screen and (min-width: 768px) {
+  .is-love {
+    padding-bottom: 100px;
+  }
   .modal-review__container {
     max-height: 628px;
     max-width: 517px;
@@ -594,5 +597,73 @@
   }
   .modal-review__form-btn {
     padding: 14px 40px;
+  }
+}
+/*=========================================*/
+/*===================explore===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .explore {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: url(../image/subscribe/Subcribe-tab.jpg);
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .explore {
+      background-image: url(../image/subscribe/Subcribe-tab@2x.jpg);
+    }
+  }
+  .explore__title {
+    max-width: 378px;
+  }
+  .explore__content {
+    margin: 0 auto;
+    gap: 24px;
+    max-width: 467px;
+  }
+
+  .explore__btn {
+    font-size: 18px;
+
+    padding: 14px 40px;
+  }
+}
+/*===================explore===media===desktop============*/
+@media screen and (min-width: 1136px) {
+  .explore {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: url(../image/subscribe/Subcribe-desk.jpg);
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .explore {
+      background-image: url(../image/subscribe/Subcribe-desk@2x.jpg);
+    }
+  }
+}
+/*=========================================*/
+/*===================modal-explore===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .modal-explore__container {
+    max-width: 538px;
+    max-height: 412px;
+  }
+
+  .modal-explore__content {
+    max-height: 412px;
+
+    padding: 40px;
+    gap: 28px;
+  }
+
+  .modal-explore__form-input {
+    max-width: 313px;
+    font-size: 18px;
+    padding: 15px 24px;
+  }
+
+  .modal-explore__form-btn {
+    left: 321px;
+
+    padding: 18px 32px;
   }
 }

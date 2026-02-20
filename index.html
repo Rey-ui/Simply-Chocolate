@@ -666,6 +666,22 @@
           <button class="is-love__btn">Leave a review</button>
         </div>
       </section>
+      <section class="explore">
+        <div class="container">
+          <div class="explore__content">
+            <h2 class="explore__title title">
+              exPLORE OUR NEW CHOCOLATE FIRST
+            </h2>
+            <p class="explore__text">
+              From the velvety texture to the rich and complex flavor, our New
+              Chocolate is a true indulgence that will leave you craving more.
+              Made with only the finest ingredients and handcrafted with the
+              utmost care, each piece is a work of art that is sure to please.
+            </p>
+            <button class="explore__btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>
@@ -822,6 +838,51 @@
               ></textarea>
             </div>
             <button type="submit" class="modal-review__form-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-explore">
+      <div class="modal-explore__container">
+        <button class="modal-explore__close">
+          <svg width="28" height="28">
+            <use href="./image/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <picture class="modal-explore__image">
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./image/modal-explore/many-choclate-mob.jpg    1x,
+              ./image/modal-explore/many-choclate-mob@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./image/modal-explore/many-choclate-desk.jpg    1x,
+              ./image/modal-explore/many-choclate-desk@2x.jpg 2x
+            "
+          />
+          <img
+            src="./image/modal-explore/many-choclate-desk.jpg"
+            alt="how-made"
+          />
+        </picture>
+        <div class="modal-explore__content">
+          <h2 class="modal-explore__title title">
+            Explore our <br />
+            <span>new chocolate</span> first!
+          </h2>
+          <form class="modal-explore__form">
+            <input
+              placeholder="Enter your email"
+              type="email"
+              class="modal-explore__form-input"
+            />
+            <button type="submit" class="modal-explore__form-btn">
+              Submit
+            </button>
           </form>
         </div>
       </div>

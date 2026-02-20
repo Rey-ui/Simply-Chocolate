@@ -53,6 +53,7 @@ textarea {
 
 button {
   cursor: pointer;
+  background-color: inherit;
 }
 
 button::-moz-focus-inner {
@@ -975,6 +976,7 @@ li::marker {
   overflow: hidden;
 } */
 .is-love {
+  padding-bottom: 72px;
 }
 .section {
 }
@@ -1219,6 +1221,165 @@ li::marker {
   transition: all 250ms;
 }
 .modal-review__form-btn:hover {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
+/*=======================================*/
+/*=======================================*/
+.explore {
+  padding-top: 63px;
+  padding-bottom: 63px;
+  background-image: url(../image/subscribe/Subcribe-mob.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-resolution: 192dpi) {
+  .explore {
+    background-image: url(../image/subscribe/Subcribe-mob@2x.jpg);
+  }
+}
+.container {
+}
+.explore__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.explore__title {
+  color: #fff;
+}
+.title {
+}
+.explore__text {
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+.explore__btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 100px;
+  background-color: #fd9222;
+  transition: all 250ms;
+}
+.explore__btn:hover {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+/*=======================================*/
+/*=======================================*/
+.modal-explore {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px; /* чтобы на мобилке не прилипало к краям */
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+/* активное состояние */
+.modal-explore.active-explore {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* сама модалка */
+.modal-explore__container {
+  background: #fff;
+  border-radius: 12px;
+
+  width: 100%;
+  max-width: 311px;
+
+  max-height: 350px;
+  height: 100%;
+  overflow-y: hidden;
+
+  position: relative;
+}
+.modal-explore__image {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.modal-explore__content {
+  max-height: 350px;
+  /* overflow-y: auto;
+  height: 100%; */
+  padding: 0 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.modal-explore__title {
+  text-align: start;
+
+  width: 100%;
+}
+.modal-explore__close {
+  top: 14px;
+  right: 14px;
+  position: absolute;
+  stroke: #111111;
+  background-color: transparent;
+  padding: 0;
+  transition: all 250ms;
+}
+.modal-explore__close svg {
+  stroke: #ffffff;
+  fill: inherit;
+}
+.modal-explore__close:hover {
+  stroke: #fd9222;
+}
+.modal-explore__form {
+  position: relative;
+}
+.modal-explore__form-input {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  padding: 14px 18px;
+  padding-right: 100px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 100px;
+  width: 100%;
+}
+
+.modal-explore__form-btn {
+  position: absolute;
+  top: 0;
+  left: 163px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 100px;
+  align-self: start;
+  background-color: #fd9222;
+  transition: all 250ms;
+}
+.modal-explore__form-btn:hover {
   color: #fd9222;
   background-color: #fcf1e0;
 }

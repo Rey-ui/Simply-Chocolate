@@ -2,31 +2,43 @@ const burgerMenu = document.querySelector(".header-burger");
 const modalEl = document.querySelector(".modal");
 const modalBuyEl = document.querySelector(".modal-buy");
 const modalReviewEl = document.querySelector(".modal-review");
+const modalExploreEl = document.querySelector(".modal-explore");
 const linkEl = document.querySelector(".modal-close");
 const buyNowBtns = document.querySelectorAll(".buy-button");
 const reviewBtn = document.querySelector(".is-love__btn");
 const closeBtn = document.querySelector(".modal-buy__close");
 const closeReviewBtn = document.querySelector(".modal-review__close");
+const closeExploreBtn = document.querySelector(".modal-explore__close");
+const exploreBtn = document.querySelector(".explore__btn");
 burgerMenu.addEventListener("click", () => {
   modalEl.classList.add("active");
 });
 linkEl.addEventListener("click", () => {
   modalEl.classList.remove("active");
 });
+
 buyNowBtns.forEach((element) => {
   element.addEventListener("click", () => {
     modalBuyEl.classList.add("active-buy");
   });
 });
+closeBtn.addEventListener("click", () => {
+  modalBuyEl.classList.remove("active-buy");
+});
 
 reviewBtn.addEventListener("click", () => {
   modalReviewEl.classList.add("active-review");
 });
-closeBtn.addEventListener("click", () => {
-  modalBuyEl.classList.remove("active-buy");
-});
+
 closeReviewBtn.addEventListener("click", () => {
   modalReviewEl.classList.remove("active-review");
+});
+exploreBtn.addEventListener("click", () => {
+  modalExploreEl.classList.add("active-explore");
+});
+
+closeExploreBtn.addEventListener("click", () => {
+  modalExploreEl.classList.remove("active-explore");
 });
 // Initialize Swiper
 const swiper = new Swiper(".my-swiper", {
