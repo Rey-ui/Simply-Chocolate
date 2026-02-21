@@ -45,7 +45,6 @@
     align-items: center;
     gap: 188px;
   }
-
   .header-link {
     font-size: 18px;
     line-height: 1.11;
@@ -55,10 +54,6 @@
     width: 24px;
     height: 24px;
   }
-
-  .header-link__text {
-  }
-
   .header-burger {
     display: none;
   }
@@ -87,31 +82,26 @@
     padding-bottom: 36px;
     transition: all 250ms;
   }
-
   .header-item__link:hover,
   .header-item__link:focus {
     color: #5c3100;
     text-decoration: underline;
   }
-
-  .headerl-item {
-  }
-
   .header-social {
     display: flex;
     gap: 18px;
     justify-content: center;
     align-items: center;
   }
-
-  .header-social__link {
-  }
-
   .header-social__link svg {
     width: 24px;
     height: 24px;
     stroke: #111111;
     fill: #ffffff;
+    transition: all 250ms;
+  }
+  .header-social__link svg:hover {
+    stroke: #fd9222;
   }
 }
 
@@ -252,8 +242,7 @@
     right: -19px;
     border: 1px solid rgba(255, 255, 255, 0.5);
   }
-  .item-about {
-  }
+
   .item-about__svg {
     display: flex;
     align-self: flex-start;
@@ -665,5 +654,53 @@
     left: 321px;
 
     padding: 18px 32px;
+  }
+}
+/*=========================================*/
+/*===================footer===media===tablet============*/
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer-up {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: unset;
+    margin-bottom: 50px;
+  }
+  .footer-up__title {
+    max-width: 300px;
+  }
+  .footer-up__content {
+    gap: 50px;
+  }
+  .footer-up__social {
+    gap: 18px;
+  }
+  .footer__list {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+}
+/*===================footer===media===desktop============*/
+@media screen and (min-width: 1136px) {
+  .footer-up {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: unset;
+    margin-bottom: 62px;
+  }
+  .footer-up__title {
+    font-size: 28px;
+    max-width: 310px;
+  }
+  .footer-up__content {
+    gap: 63px;
   }
 }
